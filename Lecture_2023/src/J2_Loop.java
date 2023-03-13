@@ -1,0 +1,24 @@
+
+public class J2_Loop {
+	public static void main(String[] args) {
+		System.out.println("2 * 1 = " + (2 * 1));
+		System.out.println("2 * 2 = " + (2 * 2));
+		System.out.println("2 * 3 = " + (2 * 3));
+		System.out.println("2 * 4 = " + (2 * 4));
+		System.out.println("2 * 5 = " + (2 * 5));
+		System.out.println("2 * 6 = " + (2 * 6));
+		System.out.println("2 * 7 = " + (2 * 7));
+		System.out.println("2 * 8 = " + (2 * 8));
+		System.out.println("2 * 9 = " + (2 * 9));
+		
+		
+		for (int i=2; i<10; i++ ) {
+			System.out.println("2*"+i+"="+(2*i));
+		}
+		
+		for (int firstNumber = 2; firstNumber<=9; firstNumber++) {
+			for (int secondNumber = 1; secondNumber<=9; secondNumber++)
+				System.out.println(firstNumber +"*"+secondNumber+"="+(firstNumber*secondNumber));
+		}
+	}
+}
