@@ -1,0 +1,8 @@
+
+public class ExecClass2 {
+	public static void main(String[] args) {
+boolean a;
+System.out.println(a=3==10);
+	
+	}
+}

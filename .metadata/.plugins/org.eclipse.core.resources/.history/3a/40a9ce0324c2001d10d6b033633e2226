@@ -1,0 +1,13 @@
+
+public class asdf {
+	public static void main(String[] args) {
+		int a = 0;
+		for( a; a < 20; a++) {
+			if (a < 10) {
+				System.out.println("AAAA");
+			} else {
+				System.out.println("BBBB");
+			}
+		}
+	}
+}

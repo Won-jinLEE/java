@@ -1,0 +1,16 @@
+
+public class MainClass {
+	public static void main(String[] args) {
+		int sumNumber = 0;{
+		for (int i = 0; i < 1000; i++) {
+			sumNumber = sumNumber + (i + 1);
+		}
+		System.out.println(sumNumber);}
+		{for (int i = 0; i < 100; i++) {
+			if ((i + 1) % 2 == 0) {
+				sumNumber = sumNumber + (i + 1);
+			}
+		}
+		System.out.println(sumNumber);}
+	}
+}

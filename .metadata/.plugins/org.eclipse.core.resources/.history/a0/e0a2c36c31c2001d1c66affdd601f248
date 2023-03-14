@@ -1,0 +1,19 @@
+
+public class MainClass {
+	public static void main(String[] args) {
+		int sumNumber1 = 0;
+		for (int i = 0; i < 1000; i++) {
+			sumNumber1 = sumNumber1 + (i + 1);
+		}
+		System.out.println(sumNumber1);
+
+		int sumNumber2 = 0;
+		for (int i = 0; i < 100; i++) {
+			int num1 = i+1;
+			if (num1 % 2 == 0) {
+				sumNumber2 = sumNumber2 + (num1);
+			}
+		}
+		System.out.println(sumNumber2);
+	}
+}

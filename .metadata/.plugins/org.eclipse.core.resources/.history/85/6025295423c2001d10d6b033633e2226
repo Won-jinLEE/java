@@ -1,0 +1,9 @@
+
+public class asdf {
+public static void main(String[] args) {
+	int a = 10;
+	for (System.out.println("AAAA"); a < 20; a++) {
+		System.out.println("BBBB");
+	}
+}
+}
