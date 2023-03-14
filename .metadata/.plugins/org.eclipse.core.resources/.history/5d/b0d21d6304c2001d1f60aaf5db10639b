@@ -1,0 +1,10 @@
+import java.util.Random;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Random r  = new Random();
+		int randomValue = r.nextInt(10000000);
+		System.out.println("임의의 값은: "randomValue);
+		System.out.println("2로 나눈 나머지 값은: "randomValue%2);
+	}
+}

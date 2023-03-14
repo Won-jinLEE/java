@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class pp {
+	public static void main(String[] args) {
+//스캐너 선언
+		Scanner s = new Scanner(System.in);
+//첫번째 입력값
+		System.out.println("숫자를 입력해주세요");
+		double asd = s.nextDouble();
+//두번째 입력값		
+		System.out.println("숫자를 입력해주세요");
+		double dsa = s.nextDouble();
+//결과값
+		System.out.println("결과");
+		double kkk = asd / dsa;
+		System.out.println(kkk);
+		System.out.println("반올림하면:"Math.round(kkk)"입니다.");
+	}
+}

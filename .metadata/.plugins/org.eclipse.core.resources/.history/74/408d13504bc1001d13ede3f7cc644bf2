@@ -1,0 +1,12 @@
+
+public class J1_Loop4 {
+	public static void main(String[] args) {
+//1+2+3+4+5...100= 5050
+// i :초기값 1, 종료값 100, 하나씩 증가
+		int i = 1;
+		int sum = 0;
+		sum = sum + i;
+		i++;
+		sum = sum + i;
+	}
+}

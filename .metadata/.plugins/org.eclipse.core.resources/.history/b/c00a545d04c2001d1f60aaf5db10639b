@@ -1,0 +1,10 @@
+import java.util.Random;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Random r  = new Random();
+		int randomValue = r.nextInt(10000000);
+		System.out.println(randomValue);
+		System.out.println(randomValue%2);
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class fdasf1 {
+	public static void main(String[] args) {
+//스캐너 선언
+		Scanner Plus = new Scanner(System.in);
+//메세지 및 더하는 숫자를 변수 선언
+		System.out.println("첫번째 숫자를 입력해주세요.");
+		double Number1 = Plus.nextDouble();
+		System.out.println("두번째 숫자를 입력해주세요.");
+		double Number2 = Plus.nextDouble();
+//합산식을 선언
+		double SumNumber = Number1 + Number2;
+//화면에 출력을 선언
+		System.out.println("더한값은:" + SumNumber + "입니다.");
+	}
+}

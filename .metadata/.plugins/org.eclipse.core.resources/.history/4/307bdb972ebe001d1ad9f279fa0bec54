@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class lunch {
+	public static void main(String[] args) {
+		System.out.println("A를 입력하세요.");
+		Scanner s = new Scanner(System.in);
+		double a = s.nextDouble();
+		System.out.println("B를 입력하세요.");
+		Scanner s = new Scanner(System.in);
+		double b = s.nextDouble();
+		double c = a + b;
+		double d = a - b;
+		double e = a * b;
+		double f = a / b;
+		System.out.println("A와 B을 더하면:" +c+ "입니다");
+		System.out.println("A와 B을 빼면:" +d+ "입니다");
+		System.out.println("A와 B을 곱하면:" +e+ "입니다");
+		System.out.println("A와 B을 나누면:" +f+ "입니다");
+
+	}
+}

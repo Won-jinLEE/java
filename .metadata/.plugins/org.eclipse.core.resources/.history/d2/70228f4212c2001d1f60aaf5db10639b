@@ -1,0 +1,6 @@
+
+public class RockScissorsPaper {
+public static void main(String[] args) {
+	System.out.println("0을 입력하면 가위\\1을 입력하면 바위\\2를 입력하면 보");
+}
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class fdasf1 {
+	public static void main(String[] args) {
+//스캐너 선언
+		Scanner A = new Scanner(System.in);
+//입력 메시지의 출력 선언 및 입력되는 수의 변수를 선언
+		System.out.println("첫번째 숫자를 입력해주세요.");
+		double Number1 = A.nextDouble();
+		System.out.println("두번째 숫자를 입력해주세요.");
+		double Number2 = A.nextDouble();
+//식을 선언
+		double DiNumber = Number1 / Number2;
+		int TrDiNumber = (int) Math.ceil(DiNumber); 
+//곱한값의 출력을 선언
+		System.out.println("나눈 값은:" + DiNumber + "입니다.");
+		System.out.println("나머지를 버린 값은" + TrDiNumber + "입니다.");
+	}
+}

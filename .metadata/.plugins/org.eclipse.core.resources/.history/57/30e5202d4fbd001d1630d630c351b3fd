@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class pp {
+	public static void main(String[] args) {
+//스캐너 선언
+		Scanner s = new Scanner(System.in);
+		double asd = s.nextDouble();
+		double dsa = s.nextDouble();
+		double kkk = asd + dsa;
+//첫번째 입력값
+		System.out.println("숫자를 입력해주세요");
+//두번째 입력값		
+		System.out.println("숫자를 입력해주세요");
+//결과값
+		System.out.println("결과");
+		System.out.println(kkk);
+	}
+}

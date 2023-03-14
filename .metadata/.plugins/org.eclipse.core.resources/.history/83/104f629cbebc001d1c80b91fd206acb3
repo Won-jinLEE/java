@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class fdasf1 {
+	public static void main(String[] args) {
+		Scanner s = NewScanner(System.in);
+		double a = s.nextDouble();
+	}
+}

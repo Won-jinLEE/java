@@ -1,0 +1,8 @@
+public class lunch {
+	public static void main(String[] args) {
+		double doubleValue = 20.87951;
+		System.out.println(doubleValue);
+		int intValue = (int) doubleValue;
+		System.out.println(intValue);
+	}
+}

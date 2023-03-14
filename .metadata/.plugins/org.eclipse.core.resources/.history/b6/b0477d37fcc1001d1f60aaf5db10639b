@@ -1,0 +1,9 @@
+
+public class ExecClass {
+	public static void main(String[] args) {
+		int a = 10;
+		double b = 1.3;
+		String c = "hello";
+		boolean d = true;
+	}
+}

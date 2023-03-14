@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class RockScissorsPaper {
+public static void main(String[] args) {
+	System.out.println("0을 입력하면 가위1을 입력하면 바위2를 입력하면 보");
+	Scanner U=new Scanner(System.in);
+	int User = U.nextInt();
+	if (User < 0 || User > 3) {
+		System.out.println("0~1사이의 값을 입력해주세요.");
+		return;
+	}
+}
+}

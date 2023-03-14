@@ -1,0 +1,24 @@
+import java.util.Random;
+
+public class HJ {
+	public static void main(String[] args) {
+		Random r = new Random();
+		int number = r.nextInt(100);
+		System.out.println("랜덤 숫자: " + number);
+		if (number % 2 == 0) {
+			System.out.println("짝수입니다.");
+		} else {
+			System.out.println("홀수입니다.");
+		}
+		
+		if (number < 10) {
+			System.out.println("10보다 작음");
+		} else if (number < 20 ) {
+			System.out.println("20보다 작음");
+		} else if (number < 30) {
+			System.out.println("30보다 작음");
+		} else {
+			System.out.println("30보다 큼");
+		}
+	}
+}

@@ -1,0 +1,23 @@
+import java.util.Random;
+
+public class MainClass2 {
+	public static void main(String[] args) {
+		Random r = new Random();
+		int number = r.nextInt(100);
+		System.out.println("랜덤숫자 : " + number);
+		if (number % 2 == 0) {
+			System.out.println("짝수입니다.");
+		} else {
+			System.out.println("홀수입니다.");
+		}
+		if (number < 10) {
+			System.out.println("111");
+		} else if (number < 20) {
+			System.out.println("222");
+		} else if (number < 30) {
+			System.out.println("333");
+		} else {
+			System.out.println("444");
+		}
+	}
+}

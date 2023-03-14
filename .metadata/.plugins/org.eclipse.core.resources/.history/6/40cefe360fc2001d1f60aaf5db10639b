@@ -1,0 +1,20 @@
+import java.util.Random;
+
+public class MainClass3 {
+	public static void main(String[] args) {
+		Random r = new Random();
+		int random1 = r.nextInt(100);
+		int random2 = r.nextInt(100);
+		int number = random1 / random2;
+		switch(number) {
+		case 0:
+			System.out.println("나머지는 0");
+			break;
+		case 1:
+			System.out.println("나머지는 1");
+			break;
+		default:
+			System.out.println("나머지는 2");
+		}
+	}
+}

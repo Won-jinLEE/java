@@ -1,0 +1,16 @@
+public class lunch {
+	public static void main(String[] args) {
+		double First = 10;
+		double Second = 2;
+		double Third = 20;
+		long Fourth = 2147483648;
+		boolean TF = false;
+		char SS = 'a';
+		
+		System.out.println(First + Second);
+		System.out.println(Third);
+		System.out.println(Fourth);
+		System.out.println(TF);
+		System.out.println(SS);
+	}
+}

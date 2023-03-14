@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ExecClass {
+	public static void main(String[] args) {
+		int a = 10 + 3;
+
+		int b = 10 - 3;
+
+		int c = 10 * 3;
+
+		double d = (double) 10 / 3;
+
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+
+		int e = 10 % 3;
+		System.out.println(e);
+
+		String f = "Hello" + " " + "World";
+
+		System.out.println(f);
+		
+		int g = 10 + (3 * 20) - (6 / 2);
+		System.out.println(g);
+	}
+}

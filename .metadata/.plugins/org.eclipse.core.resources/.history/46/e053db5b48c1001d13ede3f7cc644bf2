@@ -1,0 +1,9 @@
+
+public class J3_Loop_IF {
+	
+	static int b = 25;
+	public static void main(String[] args) {
+		int a = 10;
+ System.out.println(b);
+	}
+}

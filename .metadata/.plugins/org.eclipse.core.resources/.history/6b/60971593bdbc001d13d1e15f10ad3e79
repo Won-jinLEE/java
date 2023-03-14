@@ -1,0 +1,7 @@
+import java.util.Scanner;
+
+public class fdasf1 {
+public static void main(String[] args) {
+s=newscanner(System.in)
+}
+}

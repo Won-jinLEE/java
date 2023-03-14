@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class pp2 {
+	public static void main(String[] args) {
+		scanner s = newScanner(System.in);
+		System.out.println("문자열을 입력하세요");
+		String asd = s.nextline();
+		System.out.println(asd);
+	}
+}

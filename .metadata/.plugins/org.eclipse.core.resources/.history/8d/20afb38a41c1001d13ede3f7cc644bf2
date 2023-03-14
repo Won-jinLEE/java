@@ -1,0 +1,12 @@
+
+public class J1_Loop {
+	public static void main(String[] args) {
+		//반복문 for
+		int i = 0; // 지역 변수 local variable
+		//for(초기값 ; 종료조건 ; 증가분)
+		for(i; i>-5; i-=1)  { // duplicated
+			System.out.println(i);
+
+		}
+	}
+}

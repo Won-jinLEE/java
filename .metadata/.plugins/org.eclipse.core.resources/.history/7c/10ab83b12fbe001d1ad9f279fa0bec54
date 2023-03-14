@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class lunch {
+	public static void main(String[] args) {
+//A를 입력받는 스캐너
+		System.out.println("A에 들어갈 수를 입력하세요");
+		Scanner s1 = new Scanner(System.in);
+		double a = s1.nextDouble();
+//B를 입력받는 스캐너		
+		System.out.println("B에 들어갈 수를 입력하세요");
+		Scanner s2 = new Scanner(System.in);
+		double b = s2.nextDouble();
+System.out.println("A가 B보다 크다" +a>b+ );
+	}
+}

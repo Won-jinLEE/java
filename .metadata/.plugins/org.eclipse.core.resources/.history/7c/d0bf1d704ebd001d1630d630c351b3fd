@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class pp {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		double asd = s.nextDouble();
+		
+		System.out.println("숫자를 입력해주세요");
+		System.out.println(asd);
+		System.out.println("숫자를 입력해주세요");
+		System.out.println(asd);
+		
+	}
+}

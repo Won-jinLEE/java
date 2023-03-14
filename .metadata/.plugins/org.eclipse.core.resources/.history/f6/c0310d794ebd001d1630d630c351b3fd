@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class pp {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("숫자를 입력해주세요");
+		double asd = s.nextDouble();
+		System.out.println(asd);
+		System.out.println("숫자를 입력해주세요");
+		double dsa = s.nextDouble();
+		System.out.println(dsa);
+		System.out.println("결과");
+		double kkk = asd+dsa
+				System.out.println(kkk);
+	}
+}

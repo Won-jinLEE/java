@@ -1,0 +1,14 @@
+import java.util.Random;
+
+public class HJ {
+	public static void main(String[] args) {
+		Random r = new Random();
+		int number = r.nextInt(100);
+		System.out.println("랜덤 숫자: " + number);
+		if (number % 2 == 0) {
+			System.out.println("짝수입니다.");
+		} else {
+			System.out.println("홀수입니다.");
+		}
+	}
+}

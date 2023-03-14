@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class pp2 {
+	public static void main(String[] args) {
+//스캐너선언		
+		Scanner s = new Scanner(System.in);
+//첫번째 문자열
+		System.out.println("문자열을 입력하세요");
+		String FirstS = s.nextLine();
+//두번째 문자열
+		System.out.println("문자열을 입력하세요");
+		String SecondS = s.nextLine();
+//결과값
+		String PlusS = FirstS + SecondS;
+		System.out.println("합친말은 '" + PlusS + "'이다");
+	}
+}

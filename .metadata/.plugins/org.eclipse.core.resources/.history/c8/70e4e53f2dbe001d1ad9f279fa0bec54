@@ -1,0 +1,8 @@
+public class lunch {
+	public static void main(String[] args) {
+		double intValue = 200.5675;
+		System.out.println(intValue);
+		long longValue = (long) intValue;
+		System.out.println(longValue);
+	}
+}

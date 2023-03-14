@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ExecClass {
+	public static void main(String[] args) {
+		int a;
+		a = 100;
+
+		long b;
+		b = 1000;
+//int값이 long값에 대입되는건 상관없음=묵시적 형변환(자동으로 됨)
+		b = a;
+//long값이 int값에 대입되는건 에러가 뜸=명시적 형변환(수동으로 해줘야함)
+		a = (int)b;
+
+	}
+}
