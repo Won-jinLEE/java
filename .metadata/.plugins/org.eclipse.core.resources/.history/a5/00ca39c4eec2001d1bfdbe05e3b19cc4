@@ -24,10 +24,7 @@ public class RockScissorsPaper {
 				System.out.println("비긴 횟수 : " + drawCount);
 				System.out.println("진 횟수 : " + cpuWinCount);
 				continue;
-			}
-			// 명령어외 이상문자 거름망
-			else if (!UserStr.equals("q") && !UserStr.equals("d") && !UserStr.equals("0") && !UserStr.equals("1")
-					&& !UserStr.equals("2")) {
+			} else if (!UserStr.equals("q")&&!UserStr.equals("d")&&!UserStr.equals("0")&&!UserStr.equals("1")&&!UserStr.equals("2")) {
 				System.out.println("올바른 문자 or 0~2사이의 값을 입력해주세요");
 				continue;
 			}

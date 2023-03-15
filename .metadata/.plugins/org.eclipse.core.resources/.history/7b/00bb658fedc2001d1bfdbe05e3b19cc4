@@ -24,11 +24,8 @@ public class RockScissorsPaper {
 				System.out.println("비긴 횟수 : " + drawCount);
 				System.out.println("진 횟수 : " + cpuWinCount);
 				continue;
-			}
-			// 명령어외 이상문자 거름망
-			else if (!UserStr.equals("q") && !UserStr.equals("d") && !UserStr.equals("0") && !UserStr.equals("1")
-					&& !UserStr.equals("2")) {
-				System.out.println("올바른 문자 or 0~2사이의 값을 입력해주세요");
+			} else if (!UserStr.equals("q")&&!UserStr.equals("d")&&!UserStr.equals("0")&&!UserStr.equals("1")&&!UserStr.equals("2")) {
+				System.out.println("올바른 문자를 입력해주세요.");
 				continue;
 			}
 			// 유저의 입력값을 String값에서 int값으로 변환
@@ -37,6 +34,11 @@ public class RockScissorsPaper {
 			Random C = new Random();
 			{
 				int Com = C.nextInt(3);
+				// 음수값과 3이상의 값을 입력시 처음부터 다시 실행하는 if문(수업시간 배운것을 재활용)
+				if (User < 0 || User > 2) {
+					System.out.println("0~2사이의 값을 입력해주세요.");
+					continue;
+				}
 				// 가위, 바위, 보의 변수를 설정
 				int scissor = 0;
 				int rock = 1;

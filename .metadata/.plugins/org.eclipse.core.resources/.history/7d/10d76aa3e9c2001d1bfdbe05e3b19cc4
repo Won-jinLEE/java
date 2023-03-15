@@ -24,19 +24,20 @@ public class RockScissorsPaper {
 				System.out.println("비긴 횟수 : " + drawCount);
 				System.out.println("진 횟수 : " + cpuWinCount);
 				continue;
-			}
-			// 명령어외 이상문자 거름망
-			else if (!UserStr.equals("q") && !UserStr.equals("d") && !UserStr.equals("0") && !UserStr.equals("1")
-					&& !UserStr.equals("2")) {
-				System.out.println("올바른 문자 or 0~2사이의 값을 입력해주세요");
+			} else {
+				System.out.println("숫자를 입력해주세요.");
 				continue;
 			}
 			// 유저의 입력값을 String값에서 int값으로 변환
-			int User = Integer.parseInt(UserStr);
-			// 컴퓨터에게 랜덤한 입력값을 받아오기 위한 new Random 선언 및 컴퓨터의 입력값(0~2사이)을 변수로 설정
-			Random C = new Random();
-			{
+			{int User = Integer.parseInt(UserStr);
+				// 컴퓨터에게 랜덤한 입력값을 받아오기 위한 new Random 선언 및 컴퓨터의 입력값(0~2사이)을 변수로 설정
+				Random C = new Random();
 				int Com = C.nextInt(3);
+				// 음수값과 3이상의 값을 입력시 처음부터 다시 실행하는 if문(수업시간 배운것을 재활용)
+				if (User < 0 || User > 2) {
+					System.out.println("0~2사이의 값을 입력해주세요.");
+					continue;
+				}
 				// 가위, 바위, 보의 변수를 설정
 				int scissor = 0;
 				int rock = 1;
@@ -72,10 +73,10 @@ public class RockScissorsPaper {
 					System.out.println("Lose...");
 					cpuWinCount = cpuWinCount + 1;
 				}
+				// 통계출력
+				System.out.println("유저가 이긴 횟수는 : " + userWinCount + "이고, 비긴 횟수는 : " + drawCount + "이고, 컴퓨터가 이긴 횟수는 : "
+						+ cpuWinCount + "입니다.");
 			}
-			// 통계출력
-			System.out.println("유저가 이긴 횟수는 : " + userWinCount + "이고, 비긴 횟수는 : " + drawCount + "이고, 컴퓨터가 이긴 횟수는 : "
-					+ cpuWinCount + "입니다.");
 		}
 	}
 }
