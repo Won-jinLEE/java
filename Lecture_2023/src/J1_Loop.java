@@ -15,7 +15,7 @@ public class J1_Loop {
 				continue;
 			}
 			Random c = new Random();
-			int com = c.nextInt(11);
+			int com = c.nextInt(10)+1;
 			int division = user / com;
 			if (division % 2 == 1) {
 				System.out.println("당신의 숫자" + user + "에서 임의의 값" + com + "을 나눈 값은" + division + "이고," + "나머지는"
