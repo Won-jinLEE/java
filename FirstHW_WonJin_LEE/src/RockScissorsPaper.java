@@ -4,9 +4,7 @@ import java.util.Scanner;
 public class RockScissorsPaper {
 	public static void main(String[] args) {
 		// 통계 누적을 위한 통계
-		int userWinCount = 0;
-		int drawCount = 0;
-		int cpuWinCount = 0;
+		int userWinCount = 0, drawCount = 0, cpuWinCount = 0;
 		// 999999번 반복하는 for문을 선언
 		for (int i = 0; i < 999999; i++) {
 			// 안내메세지 출력
@@ -26,8 +24,7 @@ public class RockScissorsPaper {
 				continue;
 			}
 			// 명령어외 이상문자 거름망
-			else if (!UserStr.equals("q") && !UserStr.equals("d") && !UserStr.equals("0") && !UserStr.equals("1")
-					&& !UserStr.equals("2")) {
+			else if (!UserStr.equals("q") && !UserStr.equals("d") && !UserStr.equals("0") && !UserStr.equals("1") && !UserStr.equals("2")) {
 				System.out.println("올바른 문자 or 0~2사이의 값을 입력해주세요");
 				continue;
 			}
@@ -38,9 +35,7 @@ public class RockScissorsPaper {
 			{
 				int Com = C.nextInt(3);
 				// 가위, 바위, 보의 변수를 설정
-				int scissor = 0;
-				int rock = 1;
-				int paper = 2;
+				int scissor = 0, rock = 1, paper = 2;
 				// 유저의 입력값을 받아 콘솔창에 출력해주는 if문
 				if (User == scissor) {
 					System.out.println("당신이 낸 것은 : 가위");
@@ -58,9 +53,7 @@ public class RockScissorsPaper {
 					System.out.println("컴퓨터가 낸 것은 : 보");
 				}
 				// win(2종)과 draw의 변수를 설정
-				int win1 = 1;
-				int win2 = -2;
-				int draw = 0;
+				int win1 = 1, win2 = -2, draw = 0;
 				// 유저와 컴퓨터의 입력값을 뺄셈하여 승리->무승부->나머지는 패배로 판별해 콘솔창에 출력하고 승부 결과를 카운트
 				if (User - Com == win1 || User - Com == win2) {
 					System.out.println("Win!");
@@ -74,8 +67,7 @@ public class RockScissorsPaper {
 				}
 			}
 			// 통계출력
-			System.out.println("유저가 이긴 횟수는 : " + userWinCount + "이고, 비긴 횟수는 : " + drawCount + "이고, 컴퓨터가 이긴 횟수는 : "
-					+ cpuWinCount + "입니다.");
+			System.out.println("유저가 이긴 횟수는 : " + userWinCount + "이고, 비긴 횟수는 : " + drawCount + "이고, 컴퓨터가 이긴 횟수는 : "+ cpuWinCount + "입니다.");
 		}
 	}
 }
