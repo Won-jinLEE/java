@@ -1,13 +1,17 @@
 
 public class P3 {
 	public static void main(String[] args) {
-		for (int i = 0; i < 9; i++) {
-			if (i == 0 || i == 8) {
-				for (int j = 0; j < 9; j++) {
+		int len = 9;
+		for (int i = 0; i < len; i++) {
+			for (int j = 0; j < len; j++) {
+				if (i == 0 || i == (len-1)) {
 					System.out.print("*");
+				}else if (j==0 || j==(len-1)){
+					System.out.print("*");
+					System.out.print(" ");
+				}else {
+					System.out.print("  ");
 				}
-			}else {
-				System.out.print("*               *");
 			}System.out.println("");
 		}
 	}
