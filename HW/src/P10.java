@@ -7,12 +7,12 @@ public class P10 {
 		int inputValueLen = inputValue.length;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("7개의 숫자를 입력해주세요.");
-		for (int i = 0; i < 7; i++) {
+		for (int i = 0; i < inputValueLen; i++) {
 			inputValue[i] = scanner.nextInt();
 		}
 		int swapIndexValue = 0;
-		for (int i = 0; i < 7; i++) {
-			for (int j = 0; j < 7; j++) {
+		for (int i = 0; i < inputValueLen; i++) {
+			for (int j = 0; j < inputValueLen; j++) {
 				if (j > 0 && inputValue[j - 1] > inputValue[j]) {
 					swapIndexValue = inputValue[j];
 					inputValue[j] = inputValue[j - 1];
@@ -24,7 +24,7 @@ public class P10 {
 		System.out.println("최대값은 : " + inputValue[inputValueLen - 1]);
 		int avgValue = 0;
 		int lenCount = 0;
-		for (int i = 0; i < 7; i++) {
+		for (int i = 0; i < inputValueLen; i++) {
 			if (i > 0 && inputValue[0] == inputValue[i]) {
 				inputValue[i] = 0;
 			} else if (inputValue[inputValueLen - 1] == inputValue[i]) {
