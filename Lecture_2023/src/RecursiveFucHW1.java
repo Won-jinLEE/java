@@ -1,24 +1,15 @@
 
 public class RecursiveFucHW1 {
 	public static void main(String[] args) {
-		int input = 200;
-
-		System.out.println(sumSum(input, 0));
+		System.out.println(factorial(5, 1));
 	}
-
-//	public static int factorial(int i) {
-//		if (i == 1) {
-//			return i;
-//		} else {
-//			return factorial(i - 1) * i;
-//		}
-//	}
-	public static int sumSum(int j, int k) {
-		if (j < 100) {
-			return j;
+	public static int factorial(int i, int j) {//누적변수 j
+		if (i == 1) {
+			return j; // i가 1이 될때 누적변수 j를 반환
 		} else {
-			k = k+j;
-			return sumSum(j);
+			j = j*i; //i의 값을 곱해서 누적
+			i--;
+			return factorial(i, j);
 		}
 	}
 }

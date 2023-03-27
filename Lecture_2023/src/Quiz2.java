@@ -32,8 +32,8 @@ public class Quiz2 {
 						listValue[i] = Integer.MAX_VALUE;
 					}
 				}
-				if (listValue[i] >= 0 && listValue[i] <= 10) {//
-					System.out.print(listValue[i]);
+				if (listValue[i] >= 0 && listValue[i] <= 10) {//배열 안의 값에서 0미만 or 10초과의 값을 카운트 안하고
+					System.out.print(listValue[i]);//배열로 출력
 				}
 			}
 			System.out.println("");
