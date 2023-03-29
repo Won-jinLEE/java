@@ -2,45 +2,65 @@ import java.util.Scanner;
 
 public class MainClass {
 	public static void main(String[] args) {
-		SaveBox saveBox[] = new SaveBox[100];
-		saveBox[0] = new SaveBox();
-		System.out.println(saveBox[0]);
-//		SaveBox s3 = new SaveBox();
-//		s1.setName("1번 저금통");
-//		s2.setName("2번 저금통");
-//		s3.setName("3번 저금통");
-//		Scanner scanner = new Scanner(System.in);
-//		for (int i = 0; i < 99999; i++) {
-//			System.out.println("메뉴를 선택해주세요.");
-//			System.out.println("1. 1번 저금통 입금");
-//			System.out.println("2. 1번 저금통 출금");
-//			System.out.println("3. 2번 저금통 입금");
-//			System.out.println("4. 2번 저금통 출금");
-//			System.out.println("5. 3번 저금통 입금");
-//			System.out.println("6. 3번 저금통 출금");
-//			System.out.println("q. 종료");
-//			String s = scanner.nextLine();
-//			if (s.equals("1")) {
-//				s1.deposit();
-//			}
-//			if (s.equals("2")) {
-//				s1.withdraw();
-//			}
-//			if (s.equals("3")) {
-//				s2.deposit();
-//			}
-//			if (s.equals("4")) {
-//				s2.withdraw();
-//			}
-//			if (s.equals("5")) {
-//				s3.deposit();
-//			}
-//			if (s.equals("6")) {
-//				s3.withdraw();
-//			}
-//			if (s.equals("q")) {
-//				break;
-//			}
-//		}
+		int account=500;//계좌의 갯수 변수
+		SaveBox saveBox[] = new SaveBox[account+1];//배열 생성
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 1; i <= account; i++) {//생성된 배열에 각각 SaveBox를 부여
+			saveBox[i] = new SaveBox();
+		}
+		for (int i = 0; i < 999999; i++) {
+			System.out.println("어떤 작업을 실행하시겠습니까?");
+			System.out.println("[1]계좌 생성");
+			System.out.println("[2]계좌 조회");
+			System.out.println("[3]입금");
+			System.out.println("[4]출금");
+			System.out.println("[q]종료");
+			String menuSelect = scanner.nextLine();
+			if (menuSelect.equals("q")) {//종료 액션
+				System.out.println("작업이 종료되었습니다.");
+				break;
+			}
+			for (int j = 0; j < 9999999; j++) {
+				if (menuSelect.equals("1")) {//생성 액션
+					System.out.println("계좌의 이름을 입력해주세요.");
+					String naming = scanner.nextLine();
+					System.out.println("몇번째 인덱스에 계좌를 생성하시겠습니까?(1~"+account+"번 인덱스까지 사용가능)");
+					int accountNumber = scanner.nextInt();
+					saveBox[accountNumber].setName(naming);
+					saveBox[accountNumber].create();
+					break;
+				} else if (menuSelect.equals("2")) {//조회 액션
+					System.out.println("몇번 계좌를 조회하시겠습니까?");
+					String checkNumber = scanner.nextLine();
+					int accountNumber = Integer.parseInt(checkNumber);
+					saveBox[accountNumber].select();
+					System.out.println("본 계좌에서 추가적인 작업을 하시겠습니까?");
+					System.out.println("[1]입금");
+					System.out.println("[2]출금");
+					System.out.println("[q]메뉴로");
+					String addAction = scanner.nextLine();
+					if(addAction.equals("1")) {
+						saveBox[accountNumber].deposit();
+					}else if(addAction.equals("2")) {
+						saveBox[accountNumber].withdraw();
+					}else if(addAction.equals("q")) {
+						break;
+					}
+					break;
+				} else if (menuSelect.equals("3")) {//입금 액션
+					System.out.println("몇번 계좌에 입금하시겠습니까?");
+					String checkNumber = scanner.nextLine();
+					int accountNumber = Integer.parseInt(checkNumber);
+					saveBox[accountNumber].deposit();
+					break;
+				} else if (menuSelect.equals("4")) {//출금 액션
+					System.out.println("몇번 계좌에서 출금하시겠습니까?");
+					String checkNumber = scanner.nextLine();
+					int accountNumber = Integer.parseInt(checkNumber);
+					saveBox[accountNumber].withdraw();
+					break;
+				}
+			}
+		}
 	}
 }
