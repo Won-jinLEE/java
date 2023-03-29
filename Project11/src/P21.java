@@ -28,7 +28,7 @@ public class P21 {
 		}
 		for(int i = 0; i<4; i++) {
 			for(int j = 0; j<4; j++) {//이중배열을 출력하기 위한 이중반복문
-				System.out.print(arr[i][j]+" ");
+				System.out.printf("%02d ", arr[i][j]);
 				if ( j==3) {//동일한 i값이 끝났을때, 띄어쓰기(정렬)하여 4*4구조로 출력하기 위한 조건문
 					System.out.println("");
 				}

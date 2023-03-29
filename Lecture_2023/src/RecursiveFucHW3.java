@@ -1,15 +1,26 @@
+import java.util.Arrays;
 
 public class RecursiveFucHW3 {
 	public static void main(String[] args) {
-		System.out.println(fibonacci(0, 0));
+		int input = 10;
+		System.out.println(fibonazzi(input));
+//		int[] asdf = new int[input + 1]; //기반
+//		for (int i = 1; i <= input; i++) {
+//			if (i == 1) {
+//				asdf[i] = i;
+//			} else {
+//				asdf[i] = asdf[i - 2] + asdf[i - 1];
+//			}
+//		}
+//		System.out.println(Arrays.toString(asdf));
 	}
-	public static int fibonacci(int i, int j) {//누적변수 j
-		if (i > 10) {//몇번째 수열값까지 더하는지 정하는 값
-			return j;
+	public static int fibonazzi(int i) {
+		if (i == 1) {
+			return 1;
+		} else if (i == 2) {
+			return 1;
 		} else {
-			j = j + i;
-			i++;
-			return fibonacci(i, j);
+			return fibonazzi(i - 2) + fibonazzi(i - 1);
 		}
 	}
 }

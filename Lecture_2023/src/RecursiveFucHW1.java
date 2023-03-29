@@ -1,7 +1,8 @@
 
 public class RecursiveFucHW1 {
 	public static void main(String[] args) {
-		System.out.println(factorial(5, 1));
+		int input = 5;
+		System.out.println(factorial(input, 1));
 	}
 	public static int factorial(int i, int j) {//누적변수 j
 		if (i == 1) {

@@ -1,7 +1,8 @@
 
 public class RecursiveFucHW2 {
 	public static void main(String[] args) {
-		System.out.println(sumSum(200, 0));
+		int input = 200;
+		System.out.println(sumSum(input, 0));
 	}
 	public static int sumSum(int i, int j) {//누적변수 j
 		if (i < 100) {
