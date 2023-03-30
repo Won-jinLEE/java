@@ -1,0 +1,17 @@
+
+public class recursiveFunc2 {
+	public static void main(String[] args) {
+		factorial(5);
+	}
+
+	public static void factorial(int i) {
+		if (i == 1) {
+
+			return;
+		}
+		int j = 1;
+		j = j * i;
+		i = i - 1;
+		factorial(i--);
+	}
+}

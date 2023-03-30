@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Simulater {
+	public double tall() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("키를 입력해주세요.");
+		double inputTall = scanner.nextDouble();
+		double tall = (inputTall/100);
+		System.out.println("당신의 키는 : "+tall+"m입니다.");
+		scanner.close();
+		return tall;
+	}
+	
+	public double weight() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("몸무게를 입력해주세요.");
+		double weight = scanner.nextDouble();
+		System.out.println("당신의 몸무게는 : "+weight+"kg입니다.");
+		scanner.close();
+		return weight;
+	}
+
+	public void result(double weight, double tall) {
+		double result = (weight / (tall*tall));
+		System.out.println("당신의 카우프 지수는 : "+result+"입니다.");
+	}
+}

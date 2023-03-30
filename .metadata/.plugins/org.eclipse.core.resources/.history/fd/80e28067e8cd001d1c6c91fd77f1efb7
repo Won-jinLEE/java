@@ -1,0 +1,21 @@
+
+public class RecursiveFucHW3 {
+	public static void main(String[] args) {
+		int input = 10;
+		System.out.println(fibonazzi(input, 0));
+	}
+
+	public static int fibonazzi(int i, int j) {
+		int asdf [] = new int [30];
+		asdf [0]= 1;
+		asdf [1]= 1;
+		if (i <= 1) {
+			return j;
+		} else {
+			j = asdf[i-2]+asdf[i-1];
+			asdf [i] = j;
+			i = i-2;
+			return fibonazzi(i, j);
+		}
+	}
+}

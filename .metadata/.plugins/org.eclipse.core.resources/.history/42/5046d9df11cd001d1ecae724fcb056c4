@@ -1,0 +1,9 @@
+
+public class MainExec {
+	public static void main(String[] args) {
+		SumMachine sumMachine = new SumMachine();
+		System.out.println(sumMachine.makeSum(1,  100));
+		System.out.println(sumMachine.makeSum(20,  200));
+		System.out.println(sumMachine.makeSum(30,  300));
+	}
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class CowFu {
+	public int inputWeight(int weight) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("몸무게를 입력해주세요.");
+		weight = scanner.nextInt();
+		return weight;
+	}
+
+	public int inputTall(int tall) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("몸무게를 입력해주세요.");
+		tall = scanner.nextInt();
+		return tall;
+	}
+
+	public static void main(String[] args) {
+		CowFu cowFu = new CowFu();
+		int weight = cowFu.inputWeight(0);
+		int tall = cowFu.inputTall(0);
+		System.out.println(weight+"  "+tall);
+	}
+}

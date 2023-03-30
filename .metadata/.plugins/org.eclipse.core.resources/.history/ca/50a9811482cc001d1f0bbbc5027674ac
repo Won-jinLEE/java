@@ -1,0 +1,15 @@
+
+public class recursiveFunc2 {
+	public static void main(String[] args) {
+		factorial(5);
+	}
+
+	public static void factorial(int i) {
+		if(i==1) return;
+		int temp [] = new int[i];
+		temp [i] = i;
+		System.out.println(temp[i]);
+		i = i-1;
+		factorial(i--);
+	}
+}

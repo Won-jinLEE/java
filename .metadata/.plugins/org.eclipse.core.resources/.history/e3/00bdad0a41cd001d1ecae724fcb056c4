@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class BackJune1 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String inputData1 = scanner.next();
+		String inputData2 = scanner.next();
+		System.out.println(inputData);
+//		if(T<=11 ||T>16||S==1) {
+//			System.out.println("280");
+//		}else if(T<0||T>24||S<0||S>1) {
+//			return;
+//		}else {
+//			System.out.println("320");
+//		}
+	}
+}

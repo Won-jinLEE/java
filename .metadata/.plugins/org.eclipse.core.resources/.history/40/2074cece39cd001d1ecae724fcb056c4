@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		SaveBox s1 = new SaveBox();
+		SaveBox s2 = new SaveBox();
+		SaveBox s3 = new SaveBox();
+		s1.setName("1번 저금통");
+		s2.setName("2번 저금통");
+		s3.setName("3번 저금통");
+		System.out.println("메뉴를 선택해주세요.\n[1]1번 저금통\n[2]2번 저금통\n[3]3번 저금통\n[q]종료");
+		Scanner scanner = new Scanner(System.in);
+		String s = scanner.nextLine();
+		for (int i = 0; i < 99999; i++) {
+			if (s.equals("1")) {
+				System.out.println("1번 저금통을 선택하셨습니다.");
+				System.out.println("하실 작업을 선택해주세요\n[1]입금\n[2]출금\n[q]종료");
+				s = scanner.nextLine();
+				if (s.equals("1")) {
+					s1.deposit();
+					System.out.println("추가로 하실 작업을 선택해주세요\n[1]입금\n[2]출금\n[q]종료");
+					return;
+				} else if (s.equals("2")) {
+					s1.withdraw();
+					s1.coin = 0;
+					continue;
+				} else if (s.equals("q")) {
+					break;
+				}
+
+			}
+			if (s.equals("2")) {
+				System.out.println("2번 저금통을 선택하셨습니다.");
+				System.out.println("하실 작업을 선택해주세요\n[1]입금\n[2]출금\n[q]종료");
+				s = scanner.nextLine();
+				if (s.equals("1")) {
+					s2.deposit();
+					System.out.println("추가로 하실 작업을 선택해주세요\n[1]입금\n[2]출금\n[q]종료");
+					continue;
+				} else if (s.equals("2")) {
+					s2.withdraw();
+					s2.coin = 0;
+					continue;
+				} else if (s.equals("q")) {
+					break;
+				}
+
+			}
+			if (s.equals("3")) {
+				System.out.println("3번 저금통을 선택하셨습니다.");
+				System.out.println("하실 작업을 선택해주세요\n[1]입금\n[2]출금\n[q]종료");
+				s = scanner.nextLine();
+				if (s.equals("1")) {
+					s3.deposit();
+					System.out.println("추가로 하실 작업을 선택해주세요\n[1]입금\n[2]출금\n[q]종료");
+					continue;
+				} else if (s.equals("2")) {
+					s3.withdraw();
+					s3.coin = 0;
+					continue;
+				} else if (s.equals("q")) {
+					break;
+				}
+
+			}
+		}
+	}
+}

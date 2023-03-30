@@ -1,0 +1,29 @@
+
+public class recursiveFunc2 {
+	public static void main(String[] args) {
+		int input =100;
+		
+		System.out.println(sumSum(input));
+	}
+//	public static int factorial(int i) {
+//		if (i == 1) {
+//			return i;
+//		}else {
+//			return factorial(i-1)*i;
+//		}
+//	}
+	public static int sumSum(int j) {
+			if (j>=200) {
+			return j;
+		}else {
+			j++;
+			return sumSum(j-100);
+		}
+	}
+//	public static void main(String[] args) {
+//		int temp= 0;
+//		for (int i =100; i<=200; i++) {
+//			temp = temp+i;
+//		}System.out.println(temp);
+//	}
+}

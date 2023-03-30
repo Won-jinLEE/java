@@ -1,0 +1,24 @@
+
+public class RecursiveFucHW1 {
+	public static void main(String[] args) {
+		int asdf = sumSum(200, 0);
+		System.out.println(asdf);
+	}
+
+//	public static int factorial(int i) {
+//		if (i == 1) {
+//			return i;
+//		} else {
+//			return factorial(i - 1) * i;
+//		}
+//	}
+	public static int sumSum(int j, int k) {
+		if (j <100) {
+			return j;
+		} else {
+			k = k+j;
+			--j;
+			return sumSum(j, k);
+		}
+	}
+}

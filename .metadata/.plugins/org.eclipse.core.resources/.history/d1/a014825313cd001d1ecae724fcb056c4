@@ -1,0 +1,7 @@
+
+public class MainExec2 {
+	public static void main(String[] args) {
+		CowFu cowFu = new Cowfu();
+		cowFu.inputData();
+	}
+}

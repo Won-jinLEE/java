@@ -1,0 +1,19 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class J4_Loop {
+	public static void main(String[] args) {
+		int c[] = { 4, 5, 6, 1, 2 };
+		int temp;
+		for(int i = 0; i<c.length; i++) {
+			for(int j =i+1; j<c.length; j++) {
+				if(c[i]<c[j]) {
+					temp = c[j];
+					c[j] = c[i];
+					c[i] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(c));
+	}
+}

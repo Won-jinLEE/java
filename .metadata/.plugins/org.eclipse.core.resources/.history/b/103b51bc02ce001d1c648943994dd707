@@ -1,0 +1,26 @@
+import java.util.Arrays;
+
+public class RecursiveFucHW3 {
+	public static void main(String[] args) {
+		int input = 10;
+		System.out.println(fibonazzi(input));
+//		int[] asdf = new int[input + 1]; //기반
+//		for (int i = 1; i <= input; i++) {
+//			if (i == 1) {
+//				asdf[i] = i;
+//			} else {
+//				asdf[i] = asdf[i - 2] + asdf[i - 1];
+//			}
+//		}
+//		System.out.println(Arrays.toString(asdf));
+//	}
+	public static int fibonazzi(int i) {
+		if (i == 1) {
+			return 1;
+		} else if (i == 2) {
+			return 1;
+		} else {
+			return fibonazzi(i - 2) + fibonazzi(i - 1);
+		}
+	}
+}

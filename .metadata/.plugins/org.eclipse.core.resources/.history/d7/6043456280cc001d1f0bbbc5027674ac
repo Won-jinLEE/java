@@ -1,0 +1,18 @@
+
+public class recursiveFunc2 {
+	public static void main(String[] args) {
+		factorial(5);
+	}
+
+	public static void factorial(int i) {
+		if(i==1) return;
+		int temp = 1;
+		int j = i;
+		int gob = 0;
+		temp = temp * gob;
+		i = i-1;
+		gob = j*i;
+		factorial(i--);
+		System.out.println(i);
+	}
+}

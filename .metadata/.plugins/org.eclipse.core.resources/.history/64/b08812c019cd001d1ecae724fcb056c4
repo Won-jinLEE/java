@@ -1,0 +1,16 @@
+
+public class MainExec {
+	public static void main(String[] args) {
+		Simulater simulater = new Simulater();
+		simulater.result(simulater.weight(), simulater.tall());
+	}
+//	public static void main(String[] args) {
+//		SumMachine sumMachine = new SumMachine();
+////		sumMachine.makeSum(1,  100);
+////		sumMachine.makeSum(20,  200);
+////		sumMachine.makeSum(30,  300);
+//		System.out.println(sumMachine.makeSum(1,  100));
+//		System.out.println(sumMachine.makeSum(20,  200));
+//		System.out.println(sumMachine.makeSum(30,  300));
+//	}
+}

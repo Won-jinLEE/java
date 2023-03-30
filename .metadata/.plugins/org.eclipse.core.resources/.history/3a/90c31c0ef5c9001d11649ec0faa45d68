@@ -1,0 +1,21 @@
+import java.util.Random;
+
+public class P7 {
+	public static void main(String[] args) {
+		Random random = new Random();
+		int random1 = random.nextInt(200);
+		System.out.println("0부터~임의의 숫자 "+random1+"까지의 소수는 다음과 같습니다.");
+		for (int i = random1; i > 0; i--) {
+			boolean isPrime = true;
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if (isPrime) {
+				System.out.println(i);
+			}
+		}
+	}
+}

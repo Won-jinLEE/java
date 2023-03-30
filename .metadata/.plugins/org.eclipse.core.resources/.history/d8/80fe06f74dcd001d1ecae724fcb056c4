@@ -1,0 +1,17 @@
+
+public class RecursiveFucHW3 {
+	public static void main(String[] args) {
+		int input = 11;
+		System.out.println(fibonazzi(input, 0));
+	}
+
+	public static int fibonazzi(int i, int j) {
+		if (i <= 1) {
+			return j;
+		} else {
+			j = j+(i-2)+(i-1);
+			i = i-1;
+			return fibonazzi(i, j);
+		}
+	}
+}

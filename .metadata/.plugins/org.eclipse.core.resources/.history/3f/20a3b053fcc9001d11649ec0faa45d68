@@ -1,0 +1,14 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class P10 {
+	public static void main(String[] args) {
+		int inputValue[] = new int[7];
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("7개의 숫자를 입력해주세요.");
+		for (int i = 0; i < 7; i++) {
+			inputValue[i]=scanner.nextInt();
+		}
+		System.out.println(Arrays.toString(inputValue));
+	}
+}

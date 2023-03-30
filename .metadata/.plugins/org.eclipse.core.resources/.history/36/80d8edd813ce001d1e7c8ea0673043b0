@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class MainClass {
+	public static void main(String[] args) {
+		SaveBox saveBox[] = new SaveBox[101];
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 1; i <= 100; i++) {
+			saveBox[i] = new SaveBox();
+		}
+		for (int i = 0; i < 999999; i++) {
+			System.out.println("어떤 작업을 실행하시겠습니까?");
+			System.out.println("[1]계좌 생성");
+			System.out.println("[2]계좌 조회");
+			System.out.println("[3]입금");
+			System.out.println("[4]출금");
+			System.out.println("[q]출금");
+			String s = scanner.nextLine();
+			if (s.equals("q")) {
+				System.out.println("작업이 종료되었습니다.");
+				break;
+			}
+			for (int j = 0; j < 9999999; j++) {
+				if (s.equals("1")) {
+					System.out.println("몇번 저금통을 생성하시겠습니까?(1~100번까지 사용가능)");
+					int s1 = scanner.nextInt();
+					saveBox[s1].setName(s1 + "번째 계좌");
+					saveBox[s1].create();
+				} else if (s.equals("2")) {
+					System.out.println("몇번 저금통을 조회하시겠습니까?");
+					int s1 = scanner.nextInt();
+					saveBox[s1].select();
+				} else if (s.equals("3")) {
+					System.out.println("몇번 저금통에 입금하시겠습니까?");
+					int s1 = scanner.nextInt();
+					saveBox[s1].deposit();
+				} else if (s.equals("4")) {
+					System.out.println("몇번 저금통에서 출금하시겠습니까?");
+					int s1 = scanner.nextInt();
+					saveBox[s1].withdraw();
+				}
+			}
+		}
+//생성		saveBox[0].create();
+//이름		saveBox[0].setName("1번 저금통");
+//입금		saveBox[0].deposit();
+//출금		saveBox[1].withdraw();
+	}
+}

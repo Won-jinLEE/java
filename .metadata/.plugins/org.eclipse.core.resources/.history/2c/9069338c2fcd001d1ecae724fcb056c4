@@ -1,0 +1,22 @@
+
+public class MainClass {
+	public static void main(String[] args) {
+		SaveBox s1 = new SaveBox();
+		SaveBox s2 = new SaveBox();
+		SaveBox s3 = new SaveBox();
+		
+		s1.deposit();
+		s1.deposit();
+		
+		s2.deposit();
+		
+		s3.coin = 300;
+		
+		s1.withdraw();
+		s2.withdraw();
+		s3.withdraw();
+		
+		s3.coin = 300;
+		
+	}
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class CowFu {
+	public int inputWeight(int weight) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("몸무게를 입력해주세요.");
+		weight = scanner.nextInt();
+		return weight;
+	}
+
+	public int inputTall(int tall) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("몸무게를 입력해주세요.");
+		tall = scanner.nextInt();
+		return tall;
+	}
+
+	public int cowCow(int cow1, int cow2) {
+		int result = cow1 / (cow2*cow2);
+		System.out.println("당신의 카우프 지수는 : "+result+"입니다.");
+		return result;
+	}
+	public static void main(String[] args) {
+		CowFu cowFu = new CowFu();
+		int weight = cowFu.inputWeight(0);
+		int tall = cowFu.inputTall(0);
+		System.out.println(cowFu.cowCow(weight, tall));
+	}
+}

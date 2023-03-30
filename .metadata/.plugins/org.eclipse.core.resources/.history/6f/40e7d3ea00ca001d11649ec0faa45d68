@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+public class P9 {
+	public static void main(String[] args) {
+		String[] listA = { "!$#^1!%#@", "#$@!^2!#$^", "!$#^3", "4!$#^", "!#$^5" };
+		String senTense = Arrays.toString(listA);
+		System.out.println("listA : " + senTense);
+		String[] listB = {};
+		for (int i = 0; i < listB.length; i++) {
+			listB[i] = listA[i].replaceAll("!", "");
+		}
+		for (int i = 0; i < listB.length; i++) {
+			System.out.println("인덱스"+i+"번째의 값은"+listB[i]+"입니다.");
+		}
+	}
+}

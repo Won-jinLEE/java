@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class SaveBox {
+	int coin;
+
+	public void deposit() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("입금할 금액을 입력해주세요.");
+		String inputString = scanner.nextLine();
+		int inputCoin = Integer.parseInt(inputString);
+		
+		coin = coin+inputCoin;
+	}
+
+	public void withdraw() {
+		System.out.println("저금통을 깼습니다.");
+		System.out.println("최종 출금 금액은 "+coin+"원입니다.");
+	}
+}

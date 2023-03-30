@@ -1,0 +1,23 @@
+
+public class RecursiveFucHW3 {
+	public static void main(String[] args) {
+		System.out.println(fibonazzi(0, 0));
+	}
+
+	public static int fibonazzi(int i, int j) {
+		int asdf [] = new int [30];
+		asdf [0]= 1;
+		asdf [1]= 1;
+		if (i >= 10) {
+			return asdf[i-3];
+		} else if(i<2){
+			i++;
+			return fibonazzi(i, j);
+		}else {
+			j = asdf[i-2]+asdf[i-1];
+			asdf [i] = j;
+			i++;
+			return fibonazzi(i, j);
+		}
+	}
+}

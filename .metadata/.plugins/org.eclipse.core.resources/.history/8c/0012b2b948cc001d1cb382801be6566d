@@ -1,0 +1,41 @@
+import java.io.FileInputStream;
+import java.util.Scanner;
+
+public class Quiz2 {
+
+	public static void main(String[] args) throws Exception {
+		System.setIn(new FileInputStream("src/inputDC.txt"));
+		Scanner sc = new Scanner(System.in);
+
+		int T;
+		T = sc.nextInt();
+		int N;
+		int ac[] = new int[500];
+		int temp;
+		for (int test_case = 1; test_case <= T; test_case++) {
+			N = sc.nextInt();
+			for (int i = 0; i < N; i++) {
+				ac[i] = sc.nextInt();
+//				System.out.print(sc.nextInt() + " ");
+			}
+			for (int i = 0; i < N; i++) {// 내림차순을 위한 for문
+				for (int j = i + 1; j < N; j++) {
+					if (ac[i] > ac[j]) {
+						temp = ac[j];
+						ac[j] = ac[i];
+						ac[i] = temp;
+					}
+				}
+			System.out.print(ac[i]);}System.out.println("");
+			for(int i = 0; i<N; i++) {
+			for (int j = 0; j < N; j++) {
+				if (j > 0 && ac[0] == ac[j]) {
+					ac[j] = 0;
+				} else if (ac[ac.length - 1] == ac[j]) {
+					ac[j] = 0;
+				}
+			}System.out.println(ac[i]);
+			}
+		}
+	}
+}

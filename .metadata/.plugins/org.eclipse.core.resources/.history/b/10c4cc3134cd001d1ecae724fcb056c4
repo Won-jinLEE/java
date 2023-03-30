@@ -1,0 +1,22 @@
+
+public class MainClass {
+	public static void main(String[] args) {
+//		SaveBox s1 = new SaveBox();
+//		SaveBox s2 = new SaveBox();
+//		SaveBox s3 = new SaveBox();
+//		
+//		s1.setName("1번 저금통");
+//		s2.setName("2번 저금통");
+//		s3.setName("3번 저금통");
+//		
+//		s1.deposit();
+//		s1.deposit();
+//		
+//		s2.deposit();
+//				
+//		s1.withdraw();
+//		s2.withdraw();
+//		s3.withdraw();
+		System.out.println("메뉴를 선택해주세요\n[1] 1번 저금통\n[2] 2번 저금통\n[3] 3번 저금통\n[q] 종료");
+	}
+}

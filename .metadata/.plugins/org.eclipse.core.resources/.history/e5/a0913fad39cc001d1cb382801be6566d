@@ -1,0 +1,13 @@
+
+public class recursiveFunc {
+	public static void main(String[] args) {
+	}
+
+	public static void printHello(int i) {
+		if (i>100) return;
+		i = 1;
+		i  = i+1;
+		int j = i+1;
+		printHello(i++);
+	}
+}

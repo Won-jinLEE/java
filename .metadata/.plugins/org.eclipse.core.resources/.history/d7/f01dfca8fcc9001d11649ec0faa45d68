@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class P10 {
+	public static void main(String[] args) {
+		int inputValue[] = new int[7];
+		int inputValueLen = inputValue.length;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("7개의 숫자를 입력해주세요.");
+		for (int i = 0; i < 7; i++) {
+			inputValue[i]=scanner.nextInt();
+		}
+		System.out.println(Arrays.toString(inputValue));
+		int swapIndexValue = 0; 
+		for (int i = 0; i < 7; i++) {  
+			for (int j = 0; j < 7; j++) {
+				if (j > 0 && inputValue[j - 1] > inputValue[j]) { 
+					swapIndexValue = inputValue[j];
+					inputValue[j] = inputValue[j - 1];
+					inputValue[j - 1] = swapIndexValue;
+				}
+			}
+		}
+		System.out.println("최소값은"+inputValue[0]);
+		System.out.println("최대값은"+inputValue[inputValueLen]);
+	}
+}

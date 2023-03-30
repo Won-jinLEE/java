@@ -1,0 +1,16 @@
+
+public class asdf1 {
+	public static void main(String[] args) {
+		System.out.println(factorial(5, 1));
+	}
+
+	public static int factorial(int i, int j) {
+		if (i == 1) {
+			return j;
+		} else {
+			j = j * i;
+			i--;
+			return factorial(i, j);
+		}
+	}
+}

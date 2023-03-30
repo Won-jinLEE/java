@@ -1,0 +1,21 @@
+
+public class MainClass {
+	public static void main(String[] args) {
+		SaveBox s1 = new SaveBox();
+		SaveBox s2 = new SaveBox();
+		SaveBox s3 = new SaveBox();
+		
+		s1.setName("1번 저금통");
+		s2.setName("2번 저금통");
+		s3.setName("3번 저금통");
+		int select = s1.select;
+		s1.deposit();
+		s1.deposit();
+		
+		s2.deposit();
+				
+		s1.withdraw();
+		s2.withdraw();
+		s3.withdraw();
+	}
+}

@@ -1,0 +1,16 @@
+
+public class RecursiveFucHW2 {
+	public static void main(String[] args) {
+		System.out.println(sumSum(200, 0));
+	}
+
+	public static int sumSum(int i, int j) {
+		if (i < 100) {
+			return j;
+		} else {
+			j = j + i;
+			i--;
+			return sumSum(i, j);
+		}
+	}
+}

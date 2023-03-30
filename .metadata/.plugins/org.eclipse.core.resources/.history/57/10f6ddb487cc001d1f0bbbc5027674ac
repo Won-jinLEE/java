@@ -1,0 +1,29 @@
+
+public class recursiveFunc2 {
+//	public static void main(String[] args) {
+//		int input =5;
+//		
+//		System.out.println(factorial(input));
+//	}
+//	public static int factorial(int i) {
+//		if (i == 1) {
+//			return i;
+//		}else {
+//			return factorial(i-1)*i;
+//		}
+//	}
+	public static String num(int i) {
+        if(i==0){
+            return "zero";
+        } else if(i==1){
+            return "one";
+        } else if(i==2){
+            return "two";
+        }
+        return "none";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(num(1));
+    }
+}

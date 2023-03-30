@@ -1,0 +1,26 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class P20 {
+	public static void main(String[] args) {
+		int trialsNumber = 5; // 인덱스의 갯수(시행할 횟수의)값에 대한 변수
+		int[] score = new int[trialsNumber]; // trialsNumber(30)만큼의 인덱스 갯수만 가진 깡통 배열 score를 선언
+		Random random = new Random(); // 랜덤값
+		for (int i = 0; i < trialsNumber; i++) { // trialsNumber(30)만큼 랜덤값(0~100)을 인덱스에 차례대로 대입
+			score[i] = random.nextInt(101);
+		}
+		System.out.println(Arrays.toString(score)); // 정렬 전의 score를 배열을 프린트
+		
+		int swapIndexValue = 0; // 바꿔지는 수를 저장하기 위한 변수
+		for (int i = 0; i < trialsNumber; i++) { //밑의 작업을 trialsNumber(30번)만큼 반복하기 위한 for문 
+			for (int j = 0; j < trialsNumber; j++) {
+				if (j > 0 && score[j - 1] > score[j]) {//인덱스 값 1부터 자신(이하 우측)과 인덱스 값이 -1 차이 나는값(이하 좌측)과 대조해 좌측이 우측보다 더 클시에 우측의 값을 swapIndexValue에 저장하고, 우측에 좌측의 값을 대입하고, 우측의 값이 저장되어있던 swapIndexValue를 좌측에 대입. 
+					swapIndexValue = score[j];
+					score[j] = score[j - 1];
+					score[j - 1] = swapIndexValue;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(score));// 정렬 후의 score를 배열을 프린트
+	}
+}

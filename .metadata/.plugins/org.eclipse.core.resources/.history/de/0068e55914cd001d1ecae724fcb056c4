@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class CowFu {
+	public void inputData(int weight, int tall) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("몸무게를 입력해주세요.");
+		weight = scanner.nextInt();
+		System.out.println("키를 입력해주세요.");
+		tall = scanner.nextInt();
+		System.out.println("당신의 몸무게는 : "+weight+"당신의 키는 : "+tall);
+		scanner.close();
+	}
+}
