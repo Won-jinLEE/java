@@ -25,18 +25,18 @@ public class Quiz2 {
 						listValue[i] = temp;
 					}
 				}
-			}
-			for (int i = 0; i < N; i++) {
-				for (int j = i + 1; j < N; j++) {//중복값을 int의 최대값으로 변환
-					if (listValue[i] == listValue[j]) {
-						listValue[i] = Integer.MAX_VALUE;
-					}
-				}
-				if (listValue[i] >= 0 && listValue[i] <= 10) {//배열 안의 값에서 0미만 or 10초과의 값을 카운트 안하고
-					System.out.print(listValue[i]);//배열로 출력
-				}
-			}
-			System.out.println("");
+			System.out.print(listValue[i]);}
+//			for (int i = 0; i < N; i++) {
+//				for (int j = i + 1; j < N; j++) {//중복값을 int의 최대값으로 변환
+//					if (listValue[i] == listValue[j]) {
+//						listValue[i] = Integer.MAX_VALUE;
+//					}
+//				}
+//				if (listValue[i] >= 0 && listValue[i] <= 10) {//배열 안의 값에서 0미만 or 10초과의 값을 카운트 안하고
+//					System.out.print(listValue[i]);//배열로 출력
+//				}
+//			}
+//			System.out.println("");
 		}
 	}
 }
