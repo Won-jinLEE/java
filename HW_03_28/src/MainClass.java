@@ -23,19 +23,16 @@ public class MainClass {
 			for (int j = 0; j < 9999999; j++) {
 				if (menuSelect.equals("1")) {// 계좌 생성
 					System.out.println("계좌의 이름을 입력해주세요.");
-					String naming = scanner.nextLine();//계좌명 입력
+					String naming = scanner.nextLine();// 계좌명 입력
 					System.out.println("몇번째 인덱스에 계좌를 생성하시겠습니까?(1~" + account + "번 인덱스까지 사용가능)");
-					int accountNumber = scanner.nextInt();//계좌 인덱스 입력
+					String checkNumber = scanner.nextLine();// 계좌 인덱스 체크
+					int accountNumber = Integer.parseInt(checkNumber);
 					saveBox[accountNumber].setName(naming);// 계좌 작명 액션
 					saveBox[accountNumber].create();// 계좌생성 액션
-					for (int k = 0; k < 9999999; k++) {// 메뉴 2번 출력되는것을 방지하기 위한 for문(1)
-						String asdf = scanner.nextLine();
-						break;
-					}
 					break;
 				} else if (menuSelect.equals("2")) {// 계좌 조회
 					System.out.println("몇번 계좌를 조회하시겠습니까?");
-					String checkNumber = scanner.nextLine();//계좌 인덱스 체크
+					String checkNumber = scanner.nextLine();// 계좌 인덱스 체크
 					int accountNumber = Integer.parseInt(checkNumber);
 					saveBox[accountNumber].select();// 조회 액션
 					for (int k = 0; k < 9999999; k++) {
@@ -64,9 +61,9 @@ public class MainClass {
 						System.out.println("[1]네");
 						System.out.println("[2]아니요");
 						String addAction = scanner.nextLine();
-						if (addAction.equals("1")) {//입금 액션
+						if (addAction.equals("1")) {// 입금 액션
 							saveBox[accountNumber].deposit();
-						} else if (addAction.equals("2")) {//메인 메뉴로
+						} else if (addAction.equals("2")) {// 메인 메뉴로
 							break;
 						}
 					}
@@ -76,9 +73,6 @@ public class MainClass {
 					String checkNumber = scanner.nextLine();
 					int accountNumber = Integer.parseInt(checkNumber);
 					saveBox[accountNumber].withdraw();// 출금 액션
-					for (int k = 0; k < 9999999; k++) {// 메뉴 2번 출력되는것을 방지하기 위한 for문(2)
-						break;
-					}
 					break;
 				} else {
 					System.out.println("오입력입니다. 다시 입력해주세요.");
