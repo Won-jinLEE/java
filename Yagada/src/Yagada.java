@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Data {
+public class Yagada {
 	String name;
 	int region;
 	String sex;

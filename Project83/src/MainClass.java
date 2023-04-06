@@ -4,24 +4,22 @@ public class MainClass {
 	public static void main(String[] args) {
 		int respondentValue = 1000;
 		int count = 0;
-		int seoulCount = 0;
-		int gyeongiCount = 0;
-		int gangwonCount = 0;
-		int chungcheongCount = 0;
-		int junraCount = 0;
-		int gyeongsangCount = 0;
 		int maleCount = 0;
 		int femaleCount = 0;
 		Scanner scanner = new Scanner(System.in);
 		Yagada[] yagada = new Yagada[respondentValue];
 		for (int i = 0; i < respondentValue; i++) {
-			System.out.println("하고 싶은 작업을 골라주세요. [1] 자료 입력 [q] 결과 출력(종료)");
+			System.out.println("하고 싶은 작업을 골라주세요. [1] 자료 입력 [2] 지역명 입력 [q] 결과 출력(종료)");
 			String inputValue = scanner.nextLine();
 			if (inputValue.equals("1")) {
 				yagada[count] = new Yagada();
 				yagada[count].inputData();
 				count = count + 1;
-			}else if (inputValue.equals("q")) {
+			}else if (inputValue.equals("2")) {
+				System.out.println("작업이 종료되어 결과값이 출력됩니다.");
+				break;
+			}
+			else if (inputValue.equals("q")) {
 				System.out.println("작업이 종료되어 결과값이 출력됩니다.");
 				break;
 			}
