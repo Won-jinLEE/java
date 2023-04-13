@@ -1,12 +1,6 @@
 import java.util.Arrays;
 
 public class Quiz01 {
-	public static void main(String[] args) {
-		int[] qwer = { 1, 5, 2, 6, 3, 7, 4 };
-		int[][] zxcv = { { 2, 5, 3 }, { 4, 4, 1 }, { 1, 7, 3 } };
-		Quiz01 quiz = new Quiz01();
-		System.out.println(Arrays.toString(quiz.solution(qwer, zxcv)));
-	}
 
 	public int[] solution(int[] array, int[][] commands) {
 		int[] answer = new int[commands.length];

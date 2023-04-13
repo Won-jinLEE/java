@@ -5,14 +5,14 @@ public class Quiz03 {
 		System.out.println(quiz.solution(626331));
 	}
 
-	public int solution(int num) {
+	public int solution(double num) {
 		int answer = 0;
 		for (int i = 0; i < 9999999; i++) {
 			if (num == 1) {
 				break;
 			} else {
 				if (num % 2 == 0) {
-					num = (num / 2);
+				num = (num / 2);
 					answer = answer + 1;
 				} else {
 					num = (num * 3) + 1;
